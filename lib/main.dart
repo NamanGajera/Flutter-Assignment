@@ -5,6 +5,7 @@ import 'package:flu_ass/que/que3/que3.dart';
 import 'package:flu_ass/que/que4/que4.dart';
 import 'package:flu_ass/que/que5/que5.dart';
 import 'package:flu_ass/que/que6/que6.dart';
+import 'package:flu_ass/que/que7/que7.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -28,7 +29,7 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var _page = [
+    var page = [
       const Que1(),
       const Que1screen2(),
       const Que2(),
@@ -36,9 +37,10 @@ class Home extends StatelessWidget {
       const Que4(),
       const Que5(),
       const Que6(),
+      const Que7(),
     ];
 
-    var _pagename = [
+    var pagename = [
       'Question 1',
       'Question 1_2',
       'Question 2',
@@ -46,6 +48,7 @@ class Home extends StatelessWidget {
       'Question 4',
       'Question 5',
       'Question 6',
+      'Question 7',
     ];
     return Scaffold(
       appBar: AppBar(
@@ -58,18 +61,18 @@ class Home extends StatelessWidget {
           child: SizedBox(
             height: MediaQuery.of(context).size.height,
             child: ListView.builder(
-              itemCount: _pagename.length,
+              itemCount: pagename.length,
               itemBuilder: (context, index) {
                 return ElevatedButton(
                   onPressed: () {
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) {
-                        return _page[index];
+                        return page[index];
                       }),
                     );
                   },
-                  child: Text(_pagename[index]),
+                  child: Text(pagename[index]),
                 );
               },
             ),
