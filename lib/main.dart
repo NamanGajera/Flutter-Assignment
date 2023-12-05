@@ -6,6 +6,7 @@ import 'package:flu_ass/que/que4/que4.dart';
 import 'package:flu_ass/que/que5/que5.dart';
 import 'package:flu_ass/que/que6/que6.dart';
 import 'package:flu_ass/que/que7/que7.dart';
+import 'package:flu_ass/que/que8/que8.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -38,6 +39,7 @@ class Home extends StatelessWidget {
       const Que5(),
       const Que6(),
       const Que7(),
+      const Que8(),
     ];
 
     var pagename = [
@@ -49,6 +51,7 @@ class Home extends StatelessWidget {
       'Question 5',
       'Question 6',
       'Question 7',
+      'Question 8',
     ];
     return Scaffold(
       appBar: AppBar(
