@@ -2,6 +2,7 @@ import 'package:flu_ass/que/que1/que1.dart';
 import 'package:flu_ass/que/que1/que1_2.dart';
 import 'package:flu_ass/que/que2/que2.dart';
 import 'package:flu_ass/que/que3/que3.dart';
+import 'package:flu_ass/que/que4/que4.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -30,6 +31,7 @@ class Home extends StatelessWidget {
       const Que1screen2(),
       const Que2(),
       const Que3(),
+      const Que4(),
     ];
 
     var _pagename = [
@@ -37,15 +39,12 @@ class Home extends StatelessWidget {
       'Question 1_2',
       'Question 2',
       'Question 3',
+      'Question 4',
     ];
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Ui'),
         centerTitle: true,
-        leading: IconButton(
-          onPressed: () {},
-          icon: Icon(Icons.arrow_back),
-        ),
       ),
       body: SingleChildScrollView(
         child: Padding(
