@@ -1,6 +1,7 @@
 import 'package:flu_ass/que/que1/que1.dart';
 import 'package:flu_ass/que/que1/que1_2.dart';
 import 'package:flu_ass/que/que10/que10.dart';
+import 'package:flu_ass/que/que11/que11.dart';
 import 'package:flu_ass/que/que2/que2.dart';
 import 'package:flu_ass/que/que3/que3.dart';
 import 'package:flu_ass/que/que4/que4.dart';
@@ -44,6 +45,7 @@ class Home extends StatelessWidget {
       const Que8(),
       const Que9(),
       const Que10(),
+      const Que11(),
     ];
 
     var pagename = [
@@ -58,6 +60,7 @@ class Home extends StatelessWidget {
       'Question 8',
       'Question 9',
       'Question 10',
+      'Question 11',
     ];
 
     return Scaffold(
