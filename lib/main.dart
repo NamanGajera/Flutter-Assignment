@@ -7,6 +7,7 @@ import 'package:flu_ass/que/que5/que5.dart';
 import 'package:flu_ass/que/que6/que6.dart';
 import 'package:flu_ass/que/que7/que7.dart';
 import 'package:flu_ass/que/que8/que8.dart';
+import 'package:flu_ass/que/que9/que9.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -40,6 +41,7 @@ class Home extends StatelessWidget {
       const Que6(),
       const Que7(),
       const Que8(),
+      const Que9(),
     ];
 
     var pagename = [
@@ -52,7 +54,9 @@ class Home extends StatelessWidget {
       'Question 6',
       'Question 7',
       'Question 8',
+      'Question 9',
     ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Flutter Ui'),
@@ -66,16 +70,19 @@ class Home extends StatelessWidget {
             child: ListView.builder(
               itemCount: pagename.length,
               itemBuilder: (context, index) {
-                return ElevatedButton(
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) {
-                        return page[index];
-                      }),
-                    );
-                  },
-                  child: Text(pagename[index]),
+                return Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) {
+                          return page[index];
+                        }),
+                      );
+                    },
+                    child: Text(pagename[index]),
+                  ),
                 );
               },
             ),
