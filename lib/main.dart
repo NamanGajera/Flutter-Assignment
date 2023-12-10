@@ -77,6 +77,7 @@ class Home extends StatelessWidget {
           child: SizedBox(
             height: MediaQuery.of(context).size.height,
             child: ListView.builder(
+              physics: const NeverScrollableScrollPhysics(),
               itemCount: pagename.length,
               itemBuilder: (context, index) {
                 return Padding(
