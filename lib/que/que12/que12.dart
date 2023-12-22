@@ -1,3 +1,5 @@
+// ignore_for_file: non_constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 class Que12 extends StatefulWidget {
@@ -47,14 +49,19 @@ class _Que12State extends State<Que12> {
           padding: const EdgeInsets.all(18),
           child: Column(
             children: [
-              const Row(
+              Row(
                 children: [
-                  Icon(
-                    Icons.arrow_back,
-                    size: 32,
+                  GestureDetector(
+                    onTap: () {
+                      Navigator.pop(context);
+                    },
+                    child: const Icon(
+                      Icons.arrow_back,
+                      size: 32,
+                    ),
                   ),
-                  Spacer(),
-                  Icon(
+                  const Spacer(),
+                  const Icon(
                     Icons.search,
                     size: 32,
                   ),
@@ -277,6 +284,7 @@ class _Que12State extends State<Que12> {
   }
 }
 
+// ignore: must_be_immutable
 class ItemDetails extends StatelessWidget {
   String itemname;
   String ItemImage;
@@ -556,7 +564,7 @@ class ItemDetails extends StatelessWidget {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          child: Icon(
+          child: const Icon(
             Icons.shopping_bag_outlined,
             color: Colors.black,
           ),
