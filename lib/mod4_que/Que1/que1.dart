@@ -7,7 +7,9 @@ class M4Que1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Question 1'),
+        title: const Text(
+          'Question 1',
+        ),
         centerTitle: true,
         leading: IconButton(
           onPressed: () {
@@ -20,7 +22,7 @@ class M4Que1 extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.all(22),
           width: double.infinity,
-          height: 60,
+          height: 90,
           child: ElevatedButton(
             onPressed: () {
               showDialog(
@@ -32,15 +34,11 @@ class M4Que1 extends StatelessWidget {
                     content: const Text('This is a Alert Dialog Example'),
                     actions: [
                       TextButton(
-                        onPressed: () {
-                          const SnackBar(content: Text('Cancle Cliked'));
-                        },
+                        onPressed: () {},
                         child: const Text('Cancle'),
                       ),
                       TextButton(
-                        onPressed: () {
-                          const SnackBar(content: Text('Cancle Cliked'));
-                        },
+                        onPressed: () {},
                         child: const Text('Ok'),
                       ),
                     ],
