@@ -1,6 +1,5 @@
 import 'package:flu_ass/Module3.dart';
 import 'package:flu_ass/Module4.dart';
-import 'package:flu_ass/mod4_que/Que1/que1.dart';
 import 'package:flutter/material.dart';
 
 void main() {

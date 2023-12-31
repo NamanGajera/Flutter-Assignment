@@ -4,9 +4,13 @@ import 'package:flu_ass/mod4_que/Que1/que1.dart';
 import 'package:flu_ass/mod4_que/Que3/que3.dart';
 import 'package:flu_ass/mod4_que/Que4/que4.dart';
 import 'package:flu_ass/mod4_que/Que5/que5.dart';
+import 'package:flu_ass/mod4_que/Que7/que7.dart';
+import 'package:flu_ass/mod4_que/Que8/que8.dart';
+import 'package:flu_ass/mod4_que/Que9/que9.dart';
 import 'package:flutter/material.dart';
 
 import 'mod4_que/Que2/que2.dart';
+import 'mod4_que/Que6/que6.dart';
 
 class Module4 extends StatelessWidget {
   Module4({super.key});
@@ -17,6 +21,10 @@ class Module4 extends StatelessWidget {
     'Question 3',
     'Question 4',
     'Question 5',
+    'Question 6',
+    'Question 7',
+    'Question 8',
+    'Question 9',
   ];
 
   List quepage = const [
@@ -25,6 +33,10 @@ class Module4 extends StatelessWidget {
     M4Que3(),
     M4Que4(),
     M4Que5(),
+    M4Que6(),
+    M4Que7(),
+    M4Que8(),
+    M4Que9(),
   ];
 
   @override
