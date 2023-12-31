@@ -1,20 +1,20 @@
 // ignore_for_file: must_be_immutable
 
-import 'package:flu_ass/que/que1/que1.dart';
-import 'package:flu_ass/que/que1/que1_2.dart';
-import 'package:flu_ass/que/que2/que2.dart';
-import 'package:flu_ass/que/que3/que3.dart';
-import 'package:flu_ass/que/que4/que4.dart';
-import 'package:flu_ass/que/que5/que5.dart';
-import 'package:flu_ass/que/que6/que6.dart';
-import 'package:flu_ass/que/que7/que7.dart';
-import 'package:flu_ass/que/que8/que8.dart';
-import 'package:flu_ass/que/que9/que9.dart';
+import 'package:flu_ass/mod3_que/que1/que1.dart';
+import 'package:flu_ass/mod3_que/que1/que1_2.dart';
+import 'package:flu_ass/mod3_que/que2/que2.dart';
+import 'package:flu_ass/mod3_que/que3/que3.dart';
+import 'package:flu_ass/mod3_que/que4/que4.dart';
+import 'package:flu_ass/mod3_que/que5/que5.dart';
+import 'package:flu_ass/mod3_que/que6/que6.dart';
+import 'package:flu_ass/mod3_que/que7/que7.dart';
+import 'package:flu_ass/mod3_que/que8/que8.dart';
+import 'package:flu_ass/mod3_que/que9/que9.dart';
 import 'package:flutter/material.dart';
 
-import 'que/que10/que10.dart';
-import 'que/que11/que11.dart';
-import 'que/que12/que12.dart';
+import 'mod3_que/que10/que10.dart';
+import 'mod3_que/que11/que11.dart';
+import 'mod3_que/que12/que12.dart';
 
 class Module3 extends StatelessWidget {
   Module3({super.key});

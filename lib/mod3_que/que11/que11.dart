@@ -1,4 +1,4 @@
-import 'package:flu_ass/que/que11/que11_scr2.dart';
+import 'package:flu_ass/mod3_que/que11/que11_scr2.dart';
 import 'package:flutter/material.dart';
 
 class Que11 extends StatelessWidget {
